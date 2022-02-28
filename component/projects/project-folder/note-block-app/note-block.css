@@ -1,0 +1,130 @@
+*{
+     box-sizing: border-box;
+     font-size: 1rem;
+     padding: 0;
+     margin: 0;
+     font-family: 'Century Gothic';
+     text-decoration: none;
+     color: #111;
+     resize: none;
+     outline: none;
+     border-radius: 0;
+}
+
+.page-title{
+     background-color: rgb(212, 253, 173);
+     font-size: 2rem;
+     text-align: right;
+     padding: .5rem;
+     border: rgba(17, 17, 17, 0.089) solid 1px;
+}
+
+.note-creation{
+     display: flex;
+     justify-content: space-evenly;
+     width: 60%;
+     margin: 2rem auto;
+}
+
+.options{
+     width: fit-content;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+}
+.options *{
+     cursor: pointer;
+     margin: 1rem auto;
+     text-align: center;
+     border: #111 1px solid;
+     padding: .2rem .5rem;
+     transition: ease .2s;
+}
+.options *:hover{
+     background-color: rgb(172, 201, 255);
+}
+
+.note-creation textarea{
+     background-color: rgb(158, 250, 212);
+     box-shadow: 1px 1px 3px rgba(17, 17, 17, 0.548);
+     padding: .6rem 1rem;
+     resize: both;
+     min-width: 200px;
+     min-height: 150px;
+     border: none;
+}
+
+.notes-container{
+     border-top: rgb(138, 138, 138) solid 2px;
+     padding: 1rem;
+     display: flex;
+     flex-wrap: wrap;
+     flex-grow: 1;
+}
+
+.note{
+     min-width: 200px;
+     min-height: 150px;
+     margin: .8rem;
+     transition: ease .3s;
+     display: flex;
+     flex-direction: column;
+}
+
+.note aside{
+     background-color: rgb(224, 193, 134);
+     bottom: 0;
+     width: 100%;
+     text-align: right;
+     display: flex;
+     justify-content: space-between;
+     padding: .2rem .6rem;
+}
+
+.note .note-content{
+     width: 100%;
+     padding: .3rem .6rem;
+     height: 100%;
+     resize: both;
+     min-height: 100px;
+     min-width: 200px;
+     border: none;
+}
+
+.erase-note, .save-note{
+     padding: .1rem .3rem;
+     cursor: pointer;
+     transition: ease .2s;
+}
+
+.note-date{
+     padding: .1rem .3rem;
+}
+
+.erase-note:hover{
+     background-color: rgb(219, 110, 110);
+}
+
+.save-note{
+     left: 3rem;
+}
+
+.save-note:hover{
+     background-color: rgb(170, 170, 243);
+}
+
+.bg-0{
+     background-color: rgb(250, 218, 170);
+}
+.bg-1{
+     background-color: rgb(253, 253, 209);
+}
+.bg-2{
+     background-color: rgb(206, 252, 206);
+}
+.bg-3{
+     background-color: rgb(250, 186, 186);
+}
+.bg-4{
+     background-color: rgb(209, 210, 248);
+}
